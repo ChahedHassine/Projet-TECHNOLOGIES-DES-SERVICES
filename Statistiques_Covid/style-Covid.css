@@ -1,6 +1,5 @@
 h1{
 	text-align:center;
-	color: RoyalBlue;
 	font-size: 50px;
 }
 .navbar{
@@ -10,7 +9,7 @@ h1{
 }
 h2{	
 	font-size: 40px;
-	color: blue;
+	
 }
 .image{
 	display: block;
@@ -27,5 +26,8 @@ h2{
 p{
 	font-size: 25px;
 
+}
+body {
+ background-image: url("background_covid.jpg");
 }
 
