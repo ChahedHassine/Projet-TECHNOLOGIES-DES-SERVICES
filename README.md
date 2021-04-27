@@ -5,4 +5,4 @@ Hassine Chahed_
 Taieb Hadjkacem_
 Wael Ben Dahou
 
-Notre idée consiste à développer une page web contenant des informations sur la situation pandémique en Tunisie, ainsi notre page contiendra des actualités, des statistiques concernant le covid 19 et les différents centres où les gens peuvent effectuer le test PCR.
+Notre idée consiste à développer une page web contenant des informations sur la situation pandémique en Tunisie, ainsi notre page contiendra des actualités,des informations sur le covid, des statistiques concernant le covid 19 et les différents centres où les gens peuvent effectuer le test PCR et la vaccination.
