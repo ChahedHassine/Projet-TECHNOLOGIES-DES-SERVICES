@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>info covid</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="styles/styles.css">
+		
 	</head>
 	<body>
+
 
 		<div id="tete">
 			<h1>
@@ -14,83 +16,94 @@
 			</h1>
 			<nav id="buttons">
 				
-				<a href="#symptomes"> 
-					<button type="button" class="button">Symptômes</button> 
-				</a>	
+
+					<button class="button" onclick="window.location.href='#symptomes'">Symptômes</button> 
+		
 			
-			
-				<a href="#Préventions"> 
-					<button type="button" class="button" >Préventions</button>
-			    </a>	
-			
-			
-				<a href="#Traitements"> 					
-					<button type="button" class="button">Traitements</button>
- 				</a>
-			
+					<button class="button" onclick="window.location.href='#Préventions'">Préventions</button>
+	
+					
+					<button class="button" onclick="window.location.href='#Traitements'">Traitements</button>
+ 		
 			</nav>
 		</div>
 		<br> 		<br> 		<br> 		<br>	<br>
 
-		<img src="symptome.png" class="cor" alt="alerte" width="500" height="550">
 		<div id="symptomes">
-			
+
+			<img src="symptome.png" class="cor" id="image" alt="alerte" width="400" height="380">
+
 			<h2> Symptômes </h2>
 				
 			<div id="sym">
 				<p>La COVID-19 affecte les individus de différentes manières. La plupart des personnes infectées développent une forme légère à modérée de la maladie et guérissent sans hospitalisation.</p>
-				<h3>Symptômes les plus fréquents:</h3>
-				<ul>
-					<li>
-						fièvre
-					</li>
-					<li>
-						toux sèche
-					</li>
-					<li>
-						fatigue
-					</li>
-				</ul>
+				<p>
+					<a href="#content1" class="fréq_toogle" >
+						<h3>Symptômes les plus fréquents:</h3>
+					</a>
+				</p>
+				<div class="fréq" id="content1">
+					<ul>
+						<li>
+							fièvre
+						</li>
+						<li>
+							toux sèche
+						</li>
+						<li>
+							fatigue
+						</li>
+					</ul>	
+				</div>
 				
-				<h3>Symptômes moins fréquents:</h3>
-				<ul>
-					<li>
-						courbatures
-					</li>
-					<li>
-						maux de gorge
-					</li>
-					<li>
-						diarrhée
-					</li>
-					<li>
-						conjonctivite
-					</li>
-					<li>
-						maux de tête
-					</li>
-					<li>
-						perte de l’odorat ou du goût
-					</li>
-					<li>
-						éruption cutanée, ou décoloration des doigts ou des orteils
-					</li>
-				</ul>
+				<p>
+					<a href="#content2" class="fréq_toogle" >
+						<h3>Symptômes moins fréquents:</h3>
+					</a>
+				</p>
+				<div class="fréq" id="content2">
+					<ul>
+						<li>
+							courbatures
+						</li>
+						<li>
+							maux de gorge
+						</li>
+						<li>
+							diarrhée
+						</li>
+						<li>
+							conjonctivite
+						</li>
+						<li>
+							maux de tête
+						</li>
+						<li>
+							perte de l’odorat ou du goût
+						</li>
+						<li>
+							éruption cutanée, ou décoloration des doigts ou des orteils
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<br> 		<br> 		<br> 		<br>	<br>
 
-		<img src="preventions.png" alt="preventions" width="400" height="600" class="prev">
 		<div id="Préventions">
+					<img src="preventions.png" alt="preventions" width="400" height="500" class="preve">
 			<h2> Préventions </h2>
-			
-			
 			<div id="text1">
 				<p>Protégez-vous et protégez les autres en vous tenant informé et en prenant les précautions appropriées. Suivez les conseils des autorités sanitaires locales.</p>
 				<hr>
-				<h3> Pour empêcher la propagation de la COVID-19, suivez ces recommandations : </h3>
-				<ul>
+				<p>
+					<a href="#content3" class="prev_toogle" >
+						<h3> Pour empêcher la propagation de la COVID-19, suivez ces recommandations : </h3>
+					</a>
+				</p>
+				<div class="prev" id="content3">
+					<ul>
 					<li>
 						Lavez-vous fréquemment les mains. Utilisez du savon et de l'eau, ou une solution hydroalcoolique.
 					</li>
@@ -113,6 +126,9 @@
 						Consultez un professionnel de santé si vous avez de la fièvre, que vous toussez et que vous avez des difficultés à respirer.
 					</li>
 				</ul>
+					
+				</div>
+				
 				<br>
 				<hr>
 				<p>Prévenez le professionnel de santé par téléphone au préalable. Il pourra ainsi vous orienter rapidement vers l'établissement de santé adéquat. Cela vous protège, et empêche la propagation des virus et d'autres infections.</p>
@@ -193,6 +209,9 @@
 					
 			
 		</div>
+
+		<script src="script/main.js"></script>
+
 
 	</body>
 </html>
