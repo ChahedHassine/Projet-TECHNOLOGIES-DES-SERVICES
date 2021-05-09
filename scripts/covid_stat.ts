@@ -59,11 +59,11 @@ function getCovidStats() {
 		let confirmedCases = data.location.latest.confirmed;
 		let deaths = data.location.latest.deaths;
 
-		document.getElementById('population').innerHTML = population.toLocaleString('en');
-		document.getElementById('update').innerHTML = update.substr(0, 10);
-		document.getElementById('cases').innerHTML = confirmedCases.toLocaleString('en');
-		document.getElementById('deaths').innerHTML = deaths.toLocaleString('en');
-		document.getElementById('percent').innerHTML = ((Number(deaths)/Number(confirmedCases))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%";
+		document.getElementById('population').innerHTML = "La population : "+population.toLocaleString('en');
+		document.getElementById('update').innerHTML = "La date est: "+update.substr(0, 10);
+		document.getElementById('cases').innerHTML = "Le nombre de cas: "+confirmedCases.toLocaleString('en');
+		document.getElementById('deaths').innerHTML = "Le nombre de décés: "+deaths.toLocaleString('en');
+		document.getElementById('percent').innerHTML = "La pourcentage est: "+((Number(deaths)/Number(confirmedCases))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%";
 
 
 
