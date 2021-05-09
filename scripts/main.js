@@ -55,18 +55,3 @@ document.addEventListener('click', function (event) {
 				content.classList.add('active');
 
 			}, false);
-
-
-
-
-fetch('https://coronavirus-19-api.herokuapp.com/all')
-  .then(response => response.json())
-  .then(commits => document.getElementById('cases').innerHTML = "Aujourd'hui on compte :" + commits.cases + " cas confirmés dans le monde");
-
-fetch('https://coronavirus-19-api.herokuapp.com/all')
-  .then(response => response.json())
-  .then(commits => document.getElementById('deathes').innerHTML = "Aujourd'hui on compte :" + commits.deaths + " décès dans le monde");
-
-fetch('https://coronavirus-19-api.herokuapp.com/all')
-  .then(response => response.json())
-  .then(commits => document.getElementById('recovered').innerHTML = "Aujourd'hui on compte :" + commits.recovered + " guérisons dans le monde");
