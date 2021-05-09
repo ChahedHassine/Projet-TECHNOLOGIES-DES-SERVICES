@@ -1,10 +1,10 @@
 #tete
 {
-	background-image: url("back_covid.jpg");
+	background-image: url("../images/back_covid.jpg");
 	height: 200px
 }
 body{ 
-	background-image: url("fond.jpg");
+	background-image: url("../images/fond.jpg");
 	background-position: left;
 	background-attachment: fixed;
 	background-repeat: repeat-y;
