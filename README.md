@@ -15,4 +15,4 @@ Notre idée consiste à développer une page web contenant des informations sur 
 -Pour la troisiéme semaine, On a placé nos codes relatif au développement côté serveur structuré selon la structure d’un projet « maven » pour la plateforme « Java EE 9 ».
 Dans la page info covid on a utilisé un api qui renvoit le nombre de cass covid dans le monde qui sont mises à jour quotidiennement.
 
--Pour la quatrième semaine, on a créer un web socket avec un petit serveur qui renvoit un hello avec le nom de l'utilisateur entré à la demande.
+-Pour la quatrième semaine, dans la page info covid on a créer un web socket avec un petit serveur qui renvoit un hello avec le nom de l'utilisateur entré à la demande.
