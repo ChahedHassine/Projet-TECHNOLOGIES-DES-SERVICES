@@ -66,3 +66,36 @@ fetch('https://coronavirus-19-api.herokuapp.com/all')
 fetch('https://coronavirus-19-api.herokuapp.com/all')
   .then(response => response.json())
   .then(commits => document.getElementById('recovered').innerHTML = "Aujourd'hui on compte :" + commits.recovered + " guérisons dans le monde");
+
+/*function controle(form1) {
+var test = document.form1.input.value;
+document.getElementById('nom').innerHTML = "Bienvenue " + test;
+
+}*/
+
+
+let socket = new WebSocket("wss://javascript.info/article/websocket/demo/hello");
+
+socket.onopen = function(e) {
+  alert("[open] Connection established");
+  alert("Sending to server");
+  var getInput = prompt("Entrer votre nom: ");
+  socket.send(getInput);
+};
+
+socket.onmessage = function(event) {
+  document.getElementById('nom').innerHTML = event.data;
+};
+
+socket.onclose = function(event) {
+  if (event.wasClean) {
+    alert(`[close] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+  } else {
+   
+    alert('[close] Connection died');
+  }
+};
+
+socket.onerror = function(error) {
+  alert(`[error] ${error.message}`);
+};
