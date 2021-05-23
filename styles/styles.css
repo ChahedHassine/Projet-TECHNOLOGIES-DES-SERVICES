@@ -53,6 +53,11 @@ body{
 .cor{
 	float: left
 }
+#nom{
+	color: green;
+	font-size: 100px;
+	text-align: center;
+}
 h2{
 
 	color: white;
