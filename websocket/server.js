@@ -15,15 +15,12 @@ const funFacts = [
 wss.on('connection', function connection(ws) { 
     console.log('New client connected');
     setInterval(() => {
-        
         const index = Math.floor(Math.random() * funFacts.length);
-        
         ws.send(funFacts[index]);
     }, 10 * 1000);
     ws.on('message', function incoming(message) {
         console.log(`received ${message}`);
     });
 });
-
 app.get('/', (req, res) => res.send('hello world')),
 server.listen(3000, () => console.log('listening on port : 3000'));
